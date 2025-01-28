@@ -7,19 +7,33 @@ function calculatePrice(price) {
   return price * 0.15;
 }
 
-function sum(a, b) {
-   const x = a + b;//no way X
-  return x;
+const TX = 0.15;//fix added
+
+function calculatePrice(price) {
+  return price * TX;
 }
 
-document.getElementById("clickMe").addEventListener("click",() => 
-{
+////////////////////////////////////////////////////
+
+function updateOutputMessage() {
   const output = document.getElementById("output");
-  output.innerHTML = "Button clicked!";
+  output.innerHTML = "Button clicked"; 
+}
+
+function logIterations() {
   for (let i = 0; i<5; i++) {
     console.log("Iteration " +i);
   }
+}
+
+function calculateAndLogSum() {
   const result =sum(10,20);
-  console.log("Sum result: " + result);
+  console.log("Sum result: " + result); 
+}
+
+document.getElementById("clickMe").addEventListener("click",() => {
+  updateOutputMessage(); 
+  logIterations();
+  calculateAndLogSum();
 });
 
