@@ -1,9 +1,4 @@
-function showMessage1() {
-  const output = document.getElementById("output");
-  output.innerHTML = "Button was clicked";
-}
-
-function showMessage2() {
+function showMessage() {
   const output = document.getElementById("output");
   output.innerHTML = "Button was clicked";
 }
