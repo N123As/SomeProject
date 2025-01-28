@@ -7,10 +7,12 @@ function calculatePrice(price) {
   return price * 0.15;
 }
 
-function sum(a, b) {
-   const x = a + b;//no way X
-  return x;
+const TX = 0.15;//fix added
+
+function calculatePrice(price) {
+  return price * TX;
 }
+//fix added
 
 document.getElementById("clickMe").addEventListener("click",() => 
 {
